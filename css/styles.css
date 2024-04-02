@@ -463,6 +463,10 @@ overflow: hidden;
 .foot-text{
     max-width: 288px;
     color: #F4F4FD;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 .elem-cont{
         margin-bottom: 72px;
@@ -496,7 +500,8 @@ overflow: hidden;
 
 .footer-form-title{
     text-align: center;
-        font-weight: 500;
+    font-weight: 500;
+    margin-bottom: 16px;
 }
 
 .footer-input{
@@ -512,7 +517,6 @@ overflow: hidden;
         font-size: 12px;
         line-height: 200%;
         letter-spacing: 0.04em;
-        margin-top: 16px;
 }
 .form-button{
 display: flex;
@@ -539,6 +543,11 @@ display: flex;
         margin-left: 16px;
 }
 
+.elem-icon:hover,
+.elem-icon:focus {
+    background-color: #31D0AA;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 /*MODAL*/
 
@@ -729,7 +738,6 @@ display: flex;
 }
 
 
-
 .modal-open-button {
     display: block;
     min-width: 169px;
@@ -758,7 +766,7 @@ display: flex;
 }
 
 
-.visually-hidden:checked+.check-text span {
+.visually-hidden:checked+.modal-check-span {
     border: none;
     background-color: #404BBF;
     fill: #F4F4FD;
@@ -978,7 +986,9 @@ display: flex;
 width: 408px;
 min-height: 584px; 
 }
-
+.footer-input {
+    width: 264px;
+}
 }
 
 
@@ -1004,6 +1014,7 @@ min-height: 584px;
         }
     .solution {
         padding-top: 188px;
+        padding-bottom: 188px;
         max-width: 1440px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-11.jpg);
         }  
@@ -1113,6 +1124,10 @@ min-height: 584px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
+.logo{
+    padding: 0;
+    margin-bottom: 16px;
+}
 .logo-footer{
     margin-right: 0;
 }
@@ -1121,6 +1136,9 @@ min-height: 584px;
 }
 .elem-cont{
     margin-right: auto;
+}
+.footer-input{
+    width: 264px;
 }
 
 }
@@ -1138,6 +1156,7 @@ min-height: 584px;
     height: 100%;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 999;
+    justify-content: center;
 }
 
 .is-open {
